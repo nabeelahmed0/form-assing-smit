@@ -6,79 +6,132 @@
     <title>Document</title>
   </head>
   <style>
+    * {
+      box-sizing: border-box;
+      border: 1px soli;
+    }
     label {
       font-family: "Courier New", Courier, monospace;
       font-weight: bold;
       font-size: 1rem;
       text-transform: uppercase;
     }
+    #sub-btn {
+      margin-top: 20px;
+    }
+    #Res-btn {
+      margin-top: 20px;
+    }
   </style>
   <body>
     <h1>Table Assignment</h1>
-    <form>
-      <label for="Name">First Name: &nbsp; &nbsp; &nbsp </label>
-      <input type="text" name="name" placeholder="Enter Your Name" required />
-      <br /><br />
-      <label for="last-Name">Last Name: &nbsp; &nbsp&nbsp; &nbsp</label>
-      <input type="text" name="Last-Name" placeholder="Last Name" required />
-      <br /><br />
-      <label for="Email">Email: &nbsp; &nbsp &nbsp; &nbsp; &nbsp; </label>
-      <input
-        type="Email"
-        name="Email"
-        placeholder="Enter Your Email"
-        required
-      />
-      <br /><br />
-      <label for="Password">Password &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </label>
-      <input type="password" name="Password" placeholder="Enter Your Pass" />
-      <br />
-      <br />
-      <label for="number">Phone Number: &nbsp;&nbsp;&nbsp;</label>
-      <input type="number" name="number" placeholder="enter your Numb" />
-      <br />
-      <br />
+    <table>
+      <form>
+        <tr>
+          <td><label for="Name">First Name: </label></td>
+          <td>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </td>
+        </tr>
 
-      <label for="address"
-        >address: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</label
-      >
-      <input type="text" name="address" placeholder="Enter your number" />
+        <tr>
+          <td><label for="last-Name">Last Name:</label></td>
+          <td>
+            <input
+              type="text"
+              name="Last-Name"
+              placeholder="Last Name"
+              required
+            />
+          </td>
+        </tr>
 
-      <br />
-      <br />
+        <tr>
+          <td>
+            <label for="Email">Email</label>
+          </td>
+          <td>
+            <input
+              type="Email"
+              name="Email"
+              placeholder="Enter Your Email"
+              required
+            />
+          </td>
+        </tr>
 
-      <label for="Destination">Destination:</label>
-      <select name="Destination">
-        <option value="General Manager">General Manager</option>
-        <option value="Hr Manager">Hr Manager</option>
-        <option value="Sales-Manager">Sales Manager</option></select
-      >&nbsp;
-      <label for="Other">other:</label>
-      <input type="text" name="" id="" />
-      <br />
-      <br />
-      <label for="Department">Department:</label>
-      <select name="Management">
-        <option value="Management">Management</option>
-        <option value="Head of Depart">Head of Depart</option>
-        <option value="Magager">Magager</option>
-      </select>
-      <br />
-      <br />
-      <label for="Hotel Branch"
-        >Hotel Branch:
-        <select name="Hotal 1">
-          <option value="hotel1">hotel1</option>
-          <option value="hotel2">hotel2</option>
-          <option value="hotel3">hotel3</option>
-        </select>
-      </label>
-      <br />
-      <br />
-      <br />
+        <tr>
+          <td><label for="Password">Password </label></td>
+          <td>
+            <input
+              type="password"
+              name="Password"
+              placeholder="Enter Your Pass"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="number">Phone Number:</label></td>
+          <td>
+            <input type="number" name="number" placeholder="enter your Numb" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">address:</label></td>
+          <td>
+            <input type="text" name="address" placeholder="Enter your number" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Destination">Destination:</label>
+          </td>
 
-      <input type="submit" value="Submit" />
-      <input type="reset" value="Reset" />
-    </form>
+          <td>
+            <select name="Destination">
+              <option value="General Manager">General Manager</option>
+              <option value="Hr Manager">Hr Manager</option>
+              <option value="Sales-Manager">Sales Manager</option>
+            </select>
+          </td>
+
+          <td><label for="Other">other:</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="Department">Department:</label></td>
+          <td>
+            <select name="Management">
+              <option value="Management">Management</option>
+              <option value="Head of Depart">Head of Depart</option>
+              <option value="Magager">Magager</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="Hotel Branch">Hotel Branch:</label>
+          </td>
+          <td>
+            <select name="Hotal 1">
+              <option value="hotel1">hotel1</option>
+              <option value="hotel2">hotel2</option>
+              <option value="hotel3">hotel3</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="submit" value="Submit" id="sub-btn" /></td>
+          <td><input type="reset" value="Reset" id="Res-btn" /></td>
+        </tr>
+      </form>
+    </table>
   </body>
 </html>
